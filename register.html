@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Font AWESOME -->
+    <script src="https://kit.fontawesome.com/60aef303e7.js" crossorigin="anonymous"></script>
+    <!-- Font MONTSERRAT -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container-bg">
+        <div class="background-middle">
+            <section>
+                <img src="img/logo.svg" alt="Logo Cafetería">
+            </section>
+            <div class="form-bg">
+                <form action="" class="form" id="form">
+                    <h3>REGÍSTRATE</h3>
+                    <hr>
+                    <div class="campos" id="campo-nombre">
+                        <input type="text" id="name" name="nombre" placeholder="Nombre">
+                        <i class="fas fa-times"></i>
+                        <p>Asegúrate de cumplir las siguientes
+                            condiciones: <br>
+                            - No colocar números <br>
+                            - No colocar caracteres especiales <br>
+                            ?!)$&.@"#'</p>
+                    </div>
+                    <div class="campos" id="campo-apellido">
+                        <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+                        <i class="fas fa-times"></i>
+                        <p>Asegúrate de cumplir las siguientes
+                            condiciones: <br>
+                            - No colocar números <br>
+                            - No colocar caracteres especiales <br>
+                            ?!)$&.@"#'</p>
+                    </div>
+                    <div class="campos" id="campo-email">
+                        <input type="email" id="email" name="email" placeholder="E-mail">
+                        <i class="fas fa-times"></i>
+                        <p>Un e-mail solo contiene letras, 
+                            números, puntos y guiones.</p>
+                    </div>
+                    <div class="campos" id="campo-password">
+                        <input type="password" id="password" name="password" placeholder="Contraseña" maxlength="16">
+                        <i class="fas fa-times"></i>
+                        <p>Asegúrate de cumplir las siguientes condiciones: <br>
+                            - Caracteres <b>mín. 6</b> y <b>máx. 16</b></p>
+                    </div>
+                    
+
+                    <button type="submit" id="registrarse" name="registrarse">Registrarme</button>
+
+                    <div class="rellenar-formulario" id="rellenar-formulario">
+                        <p>Por favor, complete los casilleros.</p>
+                    </div>
+
+                    <span>¿Ya tienes una cuenta? <a href="#">Inicia sesión</a></span>
+
+
+                    <div class="registrado" id="registrado-exitoso">
+                        <h4>Registro<br>
+                            exitoso!<br>
+                            <i class="far fa-check-circle"></i></h4>
+                        <a href="#">Iniciar sesión</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/register.js"></script>
+
+</body>
+</html>
